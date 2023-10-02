@@ -18,7 +18,6 @@
             });
         });
 
-
              // Get all elements with class "savory"
              const savoryDivs = document.querySelectorAll('.savory');
         
@@ -38,3 +37,15 @@
                      div.style.display = 'block';
                  });
              });
+
+                     // Get the button with class "allButton"
+        const allButton = document.querySelector('button.allButton');
+
+        // Add a click event listener to the "allButton" button
+        allButton.addEventListener('click', function() {
+            // Show all divs
+            const allDivs = document.querySelectorAll('div');
+            allDivs.forEach(function(div) {
+                div.style.display = 'block';
+            });
+        });
