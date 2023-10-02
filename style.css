@@ -1,0 +1,9 @@
+.food-icon {
+    aspect-ratio: 1 / 1;
+    width: 3rem;
+}
+
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+  }
+
