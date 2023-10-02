@@ -4,133 +4,400 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drommecake fra brost</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <img width="96" height="96" src="https://img.icons8.com/color/96/circled-left--v1.png" alt="circled-left--v1"/>
-    <h1>Danish Dream Cake</h1>
-    <p class="description">
-      Old-fashioned recipe for Danish Dream Cake (Droemmekage). This cake has
-      been made for generations and is very delicious. If you only have to make
-      one traditional Danish cake - this dream cake should be it!
-    </p>
-    <img src="https://madensverden.dk/wp-content/uploads/2021/03/droemmekage-fra-brovst.jpg" alt="cake on a baking sheet">
-    <div class="prep">
-      <div class="cooktime">
-        <img width="96" height="96" src="https://img.icons8.com/color/96/hourglass.png" alt="hourglass"/>
-        <p>25minutes minutes</p>
+    <div class="container mt-5 justify-content-center">
+      <div class="sticky-top">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas1"
+          aria-controls="offcanvasExample"
+        >
+          Back
+        </button>
       </div>
-    </div>
-    <div>
-      <p>Serves: 8 people</p>
-    </div>
-    <h2>Cake</h2>
-    <table>
-      <tr>
-        <th>img</th>
-        <th>amount</th>
-        <th>ingredient</th>
-      </tr>
-      <tr>
-        <td>
+      <div class="row">
+        <div class="col text-center">
+          <h1>Danish Dream Cake</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
           <img
-            width="96"
-            height="96"
-            src="https://img.icons8.com/color/96/flour-in-paper-packaging.png"
-            alt="flour-in-paper-packaging"
+            src="https://madensverden.dk/wp-content/uploads/2021/03/droemmekage-fra-brovst.jpg"
+            alt="cake on a baking sheet"
+            class="img-fluid w-100 h-auto p-0 m-0 rounded"
           />
-        </td>
-        <td>250g</td>
-        <td>all-purpose flour</td>
-      </tr>
-      <tr>
-        <td>
-          <img width="96" height="96" src="https://img.icons8.com/color/96/sugar.png" alt="sugar"/>
-        </td>
-        <td>250g</td>
-        <td>sugar</td>
-      </tr>
-      <tr>
-        <td>
-          <img width="96" height="96" src="https://img.icons8.com/color/96/butter.png" alt="butter"/>
-        </td>
-        <td>50g</td>
-        <td>butter</td>
-      </tr>
-      <tr>
-        <td><img width="96" height="96" src="https://img.icons8.com/color/96/egg-carton.png" alt="egg-carton"/></td>
-        <td>3</td>
-        <td>eggs</td>
-      </tr>
-      <tr>
-        <td>
-          <img width="96" height="96" src="https://img.icons8.com/color/96/milk-carton.png" alt="milk-carton"/>
-        </td>
-        <td>2dl</td>
-        <td>milk</td>
-      </tr>
-      <tr>
-        <td>
-          <img width="96" height="96" src="https://img.icons8.com/color/96/spoon-of-sugar.png" alt="spoon-of-sugar"/>
-        </td>
-        <td>2tsp</td>
-        <td>baking powder</td>
-      </tr>
-      <tr>
-        <td><img width="96" height="96" src="https://img.icons8.com/color/96/vanilla-pod.png" alt="vanilla-pod"/></td>
-        <td>1tsp</td>
-        <td>vanilla sugar</td>
-      </tr>
-    </table>
-    <h2>Topping</h2>
-    <table>
-      <tr>
-        <th>img</th>
-        <th>amount</th>
-        <th>ingredient</th>
-      </tr>
-      <tr>
-        <td>
-          <img width="96" height="96" src="https://img.icons8.com/color/96/butter.png" alt="butter"/>
-        </td>
-        <td>125g</td>
-        <td>butter</td>
-      </tr>
-      <tr>
-        <td>
-          <img width="96" height="96" src="https://img.icons8.com/color/96/milk-carton.png" alt="milk-carton"/>
-        </td>
-        <td>1/2 dl</td>
-        <td>milk</td>
-      </tr>
-      <tr>
-        <td>
-          <img width="96" height="96" src="https://img.icons8.com/color/96/sugar.png" alt="sugar"/>
-        </td>
-        <td>200g</td>
-        <td>brown sugar</td>
-      </tr>
-      <tr>
-        <td><img width="96" height="96" src="https://img.icons8.com/color/96/coconut.png" alt="coconut"/></td>
-        <td>100 g</td>
-        <td>coconut flakes</td>
-      </tr>
-    </table>
-    <p class="instructions">
-      <ol>
-        <li>Whisk eggs and sugar until light and fluffy in a bowl.</li>
-        <li>Melt the butter using a saucepan or microwave oven. Add the milk to the saucepan and stir. Add it to the bowl with eggs and sugar.</li>
-        <li>In a separate bowl; mix together all-purpose flour, vanilla sugar (essence) and baking powder. Add to the other bowl, and mix it all together into a smooth batter.</li>
-        <li>Line a baking pan (about 25x35 cm - 10x14 inch) with baking paper and pour the batter in it.</li>
-        <li>Bake the cake at 200 C (400 F) for about 20-25 minutes. When the cake is in the oven, prepare the coconut topping.</li>
-        <li>Coconut topping; melt the butter in a saucepan.</li>
-        <li>Add the milk and the brown sugar and let it simmer for about a minute.</li>
-        <li>Add the coconut flakes and mix it well.</li>
-        <li>When the cake has been in the oven for about 20-25 minutes. Take it out and pour the coconut mixture over the it. Use a knife to spread the topping evenly.</li>
-        <li>Bake the cake for another 10 minutes and it should be done. Let it cool off before serving it.</li>
-      </ol>
-    </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <p class="description">
+            Old-fashioned recipe for Danish Dream Cake (Droemmekage). This cake
+            has been made for generations and is very delicious. If you only
+            have to make one traditional Danish cake - this dream cake should be
+            it!
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>Number of servings</h2>
+          <input type="number" id="servings" class="form-control" />
+          <p>
+            Total Ingredient Quantity for
+            <span id="calculated-servings">1</span> Serving(s):
+            <span id="ingredient-quantity">1 cup</span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="row bg-primary d-flex align-items-center justify-content-center rounded-3"
+      >
+        <div class="col-3 d-flex flex-column align-items-center">
+          <img
+            src="https://img.icons8.com/color/96/hourglass.png"
+            alt="hourglass"
+            class="food-icon mt-3"
+          />
+          <p>25 min</p>
+        </div>
+        <div class="col-3 d-flex flex-column align-items-center">
+          <img
+            src="https://img.icons8.com/color/96/chef-hat.png"
+            alt="chef-hat"
+            class="food-icon mt-3"
+          />
+          <!-- where does the margin underneath the p come from - to center it I have assigned a maring to the top of the image-->
+          <p>Advanced</p>
+        </div>
+      </div>
+      <!-- accordion with content -->
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Ingredients
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show in"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <h2>Cake</h2>
+              <table class="table table-striped">
+                <tr>
+                  <th>img</th>
+                  <th>amount</th>
+                  <th>ingredient</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/flour-in-paper-packaging.png"
+                      alt="flour-in-paper-packaging"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>250g</td>
+                  <td>all-purpose flour</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/sugar.png"
+                      alt="sugar"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>250g</td>
+                  <td>sugar</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/butter.png"
+                      alt="butter"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>50g</td>
+                  <td>butter</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/egg-carton.png"
+                      alt="egg-carton"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>3</td>
+                  <td>eggs</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/milk-carton.png"
+                      alt="milk-carton"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>2dl</td>
+                  <td>milk</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/spoon-of-sugar.png"
+                      alt="spoon-of-sugar"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>2tsp</td>
+                  <td>baking powder</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/vanilla-pod.png"
+                      alt="vanilla-pod"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>1tsp</td>
+                  <td>vanilla sugar</td>
+                </tr>
+              </table>
+              <h2>Topping</h2>
+              <table class="table table-striped">
+                <tr>
+                  <th>img</th>
+                  <th>amount</th>
+                  <th>ingredient</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/butter.png"
+                      alt="butter"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>125g</td>
+                  <td>butter</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/milk-carton.png"
+                      alt="milk-carton"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>1/2 dl</td>
+                  <td>milk</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/sugar.png"
+                      alt="sugar"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>200g</td>
+                  <td>brown sugar</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="https://img.icons8.com/color/96/coconut.png"
+                      alt="coconut"
+                      class="food-icon"
+                    />
+                  </td>
+                  <td>100 g</td>
+                  <td>coconut flakes</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Instructions
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <ul class="list-unstyled">
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step1"
+                  />
+                  <label class="form-check-label strikethrough" for="step1">
+                    Whisk eggs and sugar until light and fluffy in a bowl.
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step2"
+                  />
+                  <label class="form-check-label strikethrough" for="step2">
+                    Melt the butter using a saucepan or microwave oven. Add the
+                    milk to the saucepan and stir. Add it to the bowl with eggs
+                    and sugar.
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step3"
+                  />
+                  <label class="form-check-label strikethrough" for="step3">
+                    In a separate bowl; mix together all-purpose flour, vanilla
+                    sugar (essence) and baking powder. Add to the other bowl,
+                    and mix it all together into a smooth batter.
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step4"
+                  />
+                  <label class="form-check-label strikethrough" for="step4">
+                    Line a baking pan (about 25x35 cm - 10x14 inch) with baking
+                    paper and pour the batter in it.
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step5"
+                  />
+                  <label class="form-check-label strikethrough" for="step5">
+                    Bake the cake at 200 C (400 F) for about 20-25 minutes. When
+                    the cake is in the oven, prepare the coconut topping.
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step6"
+                  />
+                  <label class="form-check-label strikethrough" for="step6">
+                    Coconut topping; melt the butter in a saucepan.
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step7"
+                  />
+                  <label class="form-check-label strikethrough" for="step7">
+                    Add the milk and the brown sugar and let it simmer for about
+                    a minute.
+                  </label>
+                </li>
+                <li>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step7"
+                  />
+                  <label class="form-check-label strikethrough" for="step7">
+                    Add the coconut flakes and mix it well.
+                  </label>
+                </li>
+                <li>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step7"
+                  />
+                  <label class="form-check-label strikethrough" for="step7">
+                    When the cake has been in the oven for about 20-25 minutes.
+                    Take it out and pour the coconut mixture over the it. Use a
+                    knife to spread the topping evenly.
+                  </label>
+                </li>
+                <li>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step7"
+                  />
+                  <label class="form-check-label strikethrough" for="step7">
+                    Bake the cake for another 10 minutes and it should be done.
+                    Let it cool off before serving it.
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"
+      ></script>
+    </div>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </html>

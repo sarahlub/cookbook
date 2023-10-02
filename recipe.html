@@ -1,176 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pancake Recipe</title>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-<div class="container mt-5 justify-content-center">
-  <div class="sticky-top"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas1" aria-controls="offcanvasExample">
-    Back
-  </button>
-</div>
-    <div class="row">
-      <div class="col text-center">
-        <h1>Pancake Recipe</h1>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container mt-5 justify-content-center">
+      <div class="sticky-top">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas1"
+          aria-controls="offcanvasExample"
+        >
+          Back
+        </button>
       </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <a href="./test1.html"><img src="images.jpeg" alt="Pancake Recipe" class="img-fluid w-100 h-auto p-0 m-0 rounded"></a>
-            </div>
-        </div>
-    
       <div class="row">
         <div class="col text-center">
-            <p>
-                A pancake is a flat cake, often thin and round, prepared from a starch-based batter that may contain eggs, milk and 
-                butter and cooked on a hot surface such as a griddle or frying pan, often frying with oil or butter. It is a type of batter bread. 
-                Click on the image, to find the recipe.
-            </p>
+          <h1>Pancake Recipe</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="./test1.html"
+            ><img
+              src="images.jpeg"
+              alt="Pancake Recipe"
+              class="img-fluid w-100 h-auto p-0 m-0 rounded"
+          /></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col text-center">
+          <p>
+            A pancake is a flat cake, often thin and round, prepared from a
+            starch-based batter that may contain eggs, milk and butter and
+            cooked on a hot surface such as a griddle or frying pan, often
+            frying with oil or butter. It is a type of batter bread. Click on
+            the image, to find the recipe.
+          </p>
         </div>
       </div>
 
       <div class="row">
         <div class="col">
-            <h2>Number of servings</h2>
-            <input type="number" id="servings" class="form-control">
-            <p>Total Ingredient Quantity for <span id="calculated-servings">1</span> Serving(s): <span id="ingredient-quantity">1 cup</span></p>
+          <h2>Number of servings</h2>
+          <input type="number" id="servings" class="form-control" />
+          <p>
+            Total Ingredient Quantity for
+            <span id="calculated-servings">1</span> Serving(s):
+            <span id="ingredient-quantity">1 cup</span>
+          </p>
         </div>
       </div>
-      <div class="row bg-primary d-flex align-items-center justify-content-center rounded-3">
+      <div
+        class="row bg-primary d-flex align-items-center justify-content-center rounded-3"
+      >
         <div class="col-3 d-flex flex-column align-items-center">
-          <img src="https://img.icons8.com/color/96/hourglass.png" alt="hourglass" class="food-icon mt-3"/>
+          <img
+            src="https://img.icons8.com/color/96/hourglass.png"
+            alt="hourglass"
+            class="food-icon mt-3"
+          />
           <p>45 min</p>
         </div>
-        <div class="col-3 d-flex  flex-column align-items-center">
-          <img src="https://img.icons8.com/color/96/chef-hat.png" alt="chef-hat" class="food-icon mt-3"/> 
+        <div class="col-3 d-flex flex-column align-items-center">
+          <img
+            src="https://img.icons8.com/color/96/chef-hat.png"
+            alt="chef-hat"
+            class="food-icon mt-3"
+          />
           <!-- where does the margin underneath the p come from - to center it I have assigned a maring to the top of the image-->
           <p>Beginner</p>
         </div>
       </div>
-          
+
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
               Ingredients
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show in" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show in"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
             <div class="accordion-body">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Ingredient</th>
-                            <th>Quantity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="https://img.icons8.com/color/96/flour-in-paper-packaging.png" alt="flour-in-paper-packaging" class="food-icon" /></td>
-                            <td>All-purpose flour</td>
-                            <td>1 cup</td>
-                        </tr>
-                        <tr>
-                          <td><img  src="https://img.icons8.com/color/96/sugar.png" alt="sugar" class="food-icon"/></td>
-                            <td>Sugar</td>
-                            <td>2 tablespoons</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <img src="https://img.icons8.com/color/96/spoon-of-sugar.png" alt="spoon-of-sugar" class="food-icon"/>
-                          </td>
-                            <td>Baking powder</td>
-                            <td>2 tablespoons</td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://img.icons8.com/emoji/48/salt-emoji.png" alt="salt-emoji" class="food-icon"/></td>
-                            <td>Salt</td>
-                            <td>1/2 teaspoon</td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://img.icons8.com/color/48/milk-carton.png" alt="milk-carton" class="food-icon"/></td>
-                            <td>Milk</td>
-                            <td>1 cup</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <img  src="https://img.icons8.com/color/96/egg-carton.png" alt="egg-carton" class="food-icon"/>
-                          </td>
-                            <td>Egg</td>
-                            <td>1 big</td>
-                        </tr>
-                        <tr>
-                            <td><img width="64" height="64" src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-vegetable-oil-oil-gas-flaticons-flat-flat-icons.png" alt="external-vegetable-oil-oil-gas-flaticons-flat-flat-icons" class="food-icon"/></td>
-                            <td>Vegetable oil</td>
-                            <td>2 tablespoons</td>
-                        </tr>
-                    </tbody>
-                </table>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Ingredient</th>
+                    <th>Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://img.icons8.com/color/96/flour-in-paper-packaging.png"
+                        alt="flour-in-paper-packaging"
+                        class="food-icon"
+                      />
+                    </td>
+                    <td>All-purpose flour</td>
+                    <td>1 cup</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://img.icons8.com/color/96/sugar.png"
+                        alt="sugar"
+                        class="food-icon"
+                      />
+                    </td>
+                    <td>Sugar</td>
+                    <td>2 tablespoons</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://img.icons8.com/color/96/spoon-of-sugar.png"
+                        alt="spoon-of-sugar"
+                        class="food-icon"
+                      />
+                    </td>
+                    <td>Baking powder</td>
+                    <td>2 tablespoons</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://img.icons8.com/emoji/48/salt-emoji.png"
+                        alt="salt-emoji"
+                        class="food-icon"
+                      />
+                    </td>
+                    <td>Salt</td>
+                    <td>1/2 teaspoon</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://img.icons8.com/color/48/milk-carton.png"
+                        alt="milk-carton"
+                        class="food-icon"
+                      />
+                    </td>
+                    <td>Milk</td>
+                    <td>1 cup</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://img.icons8.com/color/96/egg-carton.png"
+                        alt="egg-carton"
+                        class="food-icon"
+                      />
+                    </td>
+                    <td>Egg</td>
+                    <td>1 big</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        width="64"
+                        height="64"
+                        src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-vegetable-oil-oil-gas-flaticons-flat-flat-icons.png"
+                        alt="external-vegetable-oil-oil-gas-flaticons-flat-flat-icons"
+                        class="food-icon"
+                      />
+                    </td>
+                    <td>Vegetable oil</td>
+                    <td>2 tablespoons</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
               Instructions
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
             <div class="accordion-body">
-                <ul class="list-unstyled">
-                  <li class="list-group-items"><input class="form-check-input" type="checkbox" value="" id="step1">
-                    <label class="form-check-label strikethrough" for="step1">
-                        In a large bowl, whisk together the flour, sugar, baking powder and salt.
-                    </label></li>
-                  <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step2">
-            <label class="form-check-label strikethrough" for="step2">
-              In a separate bowl, whisk together the milk, egg, and vegetable oil.
-                
-              </label>
-                  </li>
-                  <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step3">
-                    <label class="form-check-label strikethrough" for="step3">
-                      Pour the wet ingredients into the dry ingredients and stir until just combined (do not over-mix).
-                    </label>
-                  </li>
-                  <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step4">
-                    <label class="form-check-label strikethrough" for="step4">
-                  Heat a non-stick pan over medium heat and scoop 1/4 cup of batter onto the pan for each pancake.
-                  </label>
-                  </li>
-                  <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step5">
-                <label class="form-check-label strikethrough" for="step5">
-                    Cook until bubbles appear on the surface of the pancake and the bottom is golden-brown, then flip and cook the other side until golden-brown.
+              <ul class="list-unstyled">
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step1"
+                  />
+                  <label class="form-check-label strikethrough" for="step1">
+                    In a large bowl, whisk together the flour, sugar, baking
+                    powder and salt.
                   </label>
                 </li>
                 <li class="list-group-items">
-                  <input class="form-check-input" type="checkbox" value="" id="step6">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step2"
+                  />
+                  <label class="form-check-label strikethrough" for="step2">
+                    In a separate bowl, whisk together the milk, egg, and
+                    vegetable oil.
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step3"
+                  />
+                  <label class="form-check-label strikethrough" for="step3">
+                    Pour the wet ingredients into the dry ingredients and stir
+                    until just combined (do not over-mix).
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step4"
+                  />
+                  <label class="form-check-label strikethrough" for="step4">
+                    Heat a non-stick pan over medium heat and scoop 1/4 cup of
+                    batter onto the pan for each pancake.
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step5"
+                  />
+                  <label class="form-check-label strikethrough" for="step5">
+                    Cook until bubbles appear on the surface of the pancake and
+                    the bottom is golden-brown, then flip and cook the other
+                    side until golden-brown.
+                  </label>
+                </li>
+                <li class="list-group-items">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step6"
+                  />
                   <label class="form-check-label strikethrough" for="step6">
                     Repeat with the remaining batter.
                   </label>
                 </li>
                 <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step7">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="step7"
+                  />
                   <label class="form-check-label strikethrough" for="step7">
                     Enjoy your pancakes!
                   </label>
-            
-                  </li>
-                </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </body>
 </html>
