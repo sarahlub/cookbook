@@ -41,9 +41,9 @@
                      // Get the button with class "allButton"
         const allButton = document.querySelector('button.allButton');
 
-        // COMPLETELY BROCKEN !!!
+
         allButton.addEventListener('click', function() {
-            // Show all divs
+            // Show all cards
             const allCards = document.querySelectorAll('.card');
             allCards.forEach(function(div) {
                 div.style.display = 'inline-block';
