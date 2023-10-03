@@ -6,22 +6,23 @@
     <title>Pancake Recipe</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
- <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
- 
 
-  
-  
+  <!-- Heading bar -->
 <div class="container mt-5 justify-content-center">
   <div class="sticky-top"><button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas1" aria-controls="offcanvasExample">
     Back
   </button></div>
     <div class="row">
-        <div class="col text-center">
-            <h1>Pancake Recipe</h1>
+        <div class="col mb-5 text-center">
+            <header><h1>Pancake Recipe</h1></header>
         </div>
     </div>
+    <!-- end of heading bar -->
+
+    <!-- short desc with img -->
             <div class="row">
                 <div class="col">
                 <a href="./test1.html"><img src="images.jpeg" alt="Pancake Recipe" class="img-fluid w-100 h-auto p-0 m-0 rounded"></a>
@@ -38,14 +39,22 @@
         </div>
       </div>
 
+      <!-- end of desc with img -->
+
+
+      <!-- servings calculator -->
       <div class="row">
         <div class="col">
             <h2>Number of servings</h2>
             <input type="number" id="servings" class="form-control">
             <p>Total Ingredient Quantity for <span id="calculated-servings">1</span> Serving(s): <span id="ingredient-quantity">1 cup</span></p>
         </div>
-       </div>
-       <div class="row bg-primary justify-content-around align-items-center">
+        </div>
+        <!-- end of calculator -->
+
+        
+        <!-- difficulty bar -->
+        <div class="row bg-primary justify-content-around align-items-center">
         <div class="col-3 justify-content-center align-items-center">
           <img src="https://img.icons8.com/color/96/hourglass.png" alt="hourglass" class="food-icon"/>
           <p>45 min</p>
@@ -54,10 +63,12 @@
           <img src="https://img.icons8.com/color/96/chef-hat.png" alt="chef-hat" class="food-icon"/>
           <p>Beginner</p>
         </div>
-       </div>
-       
+        </div>
+        <!-- difficulty bar end -->
+
+        <!-- accordion-item -->
           
-       <div class="accordion" id="accordionExample">
+        <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -127,43 +138,42 @@
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <ul class="list-unstyled">
-                  <li class="list-group-items"><input class="form-check-input" type="checkbox" value="" id="step1">
+                  <li class="list-group-items"><input class="form-check-input border-success" type="checkbox" value="" id="step1">
                     <label class="form-check-label strikethrough" for="step1">
                         In a large bowl, whisk together the flour, sugar, baking powder and salt.
                     </label></li>
                   <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step2">
+                    <input class="form-check-input border-success" type="checkbox" value="" id="step2">
             <label class="form-check-label strikethrough" for="step2">
               In a separate bowl, whisk together the milk, egg, and vegetable oil.
-                
               </label>
                   </li>
                   <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step3">
+                    <input class="form-check-input border-success" type="checkbox" value="" id="step3">
                     <label class="form-check-label strikethrough" for="step3">
                       Pour the wet ingredients into the dry ingredients and stir until just combined (do not over-mix).
                     </label>
                   </li>
                   <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step4">
+                    <input class="form-check-input border-success" type="checkbox" value="" id="step4">
                     <label class="form-check-label strikethrough" for="step4">
                   Heat a non-stick pan over medium heat and scoop 1/4 cup of batter onto the pan for each pancake.
                   </label>
                   </li>
                   <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step5">
+                    <input class="form-check-input border-success" type="checkbox" value="" id="step5">
                 <label class="form-check-label strikethrough" for="step5">
                     Cook until bubbles appear on the surface of the pancake and the bottom is golden-brown, then flip and cook the other side until golden-brown.
                   </label>
                 </li>
                 <li class="list-group-items">
-                  <input class="form-check-input" type="checkbox" value="" id="step6">
+                  <input class="form-check-input border-success" type="checkbox" value="" id="step6">
                   <label class="form-check-label strikethrough" for="step6">
                     Repeat with the remaining batter.
                   </label>
                 </li>
                 <li class="list-group-items">
-                    <input class="form-check-input" type="checkbox" value="" id="step7">
+                    <input class="form-check-input border-success" type="checkbox" value="" id="step7">
                   <label class="form-check-label strikethrough" for="step7">
                     Enjoy your pancakes!
                   </label>
@@ -174,6 +184,7 @@
           </div>
         </div>
       </div>
+      <!-- end of accordion-item -->
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
