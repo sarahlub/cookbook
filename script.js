@@ -14,7 +14,7 @@
 
             // Show all divs with class "sweet"
             sweetDivs.forEach(function(div) {
-                div.style.display = 'block';
+                div.style.display = 'inline';
             });
         });
 
@@ -34,7 +34,7 @@
      
                  // Show all divs with class "sweet"
                  savoryDivs.forEach(function(div) {
-                     div.style.display = 'block';
+                     div.style.display = 'inline';
                  });
              });
 
@@ -46,6 +46,6 @@
             // Show all divs
             const allDivs = document.querySelectorAll('div');
             allDivs.forEach(function(div) {
-                div.style.display = 'block';
+                div.style.display = 'inline';
             });
         });
