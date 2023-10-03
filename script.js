@@ -14,7 +14,7 @@
 
             // Show all divs with class "sweet"
             sweetDivs.forEach(function(div) {
-                div.style.display = 'inline';
+                div.style.display = 'inline-block';
             });
         });
 
@@ -34,7 +34,7 @@
      
                  // Show all divs with class "sweet"
                  savoryDivs.forEach(function(div) {
-                     div.style.display = 'inline';
+                     div.style.display = 'inline-block';
                  });
              });
 
@@ -44,8 +44,8 @@
         // COMPLETELY BROCKEN !!!
         allButton.addEventListener('click', function() {
             // Show all divs
-            const allDivs = document.querySelectorAll('div');
-            allDivs.forEach(function(div) {
-                div.style.display = 'inline';
+            const allCards = document.querySelectorAll('.card');
+            allCards.forEach(function(div) {
+                div.style.display = 'inline-block';
             });
         });

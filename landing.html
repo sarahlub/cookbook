@@ -13,8 +13,8 @@
     <style></style>
   </head>
   <body>
-    <div class="container container-fluid">
-      <div class="bg-dark text-light-emphasis p-5 m-2">
+    <div class="container m-lg-0 m-md-0 m-xl-0 vw-100">
+      <div class="bg-dark text-light-emphasis p-5 m-0 col-12">
         <h1 class="display-1 text-right text-light-emphasis">
           Are you Hungry?
         </h1>
@@ -23,17 +23,20 @@
         </p>
         <div>
           <p>I am hungry for:</p>
-          <button class="btn btn-primary sweetButton">Something sweet</button>
-          <button class="btn btn-primary savoryButton">Something savory</button>
-          <button class="btn btn-primary allButton">Show all</button>
-          <!-- does this work as intended? -->
+          <div class="buttoncontainer d-flex flex-wrap justify-content-between">
+            <button class="btn btn-primary sweetButton">Something sweet</button>
+            <button class="btn btn-primary savoryButton">
+              Something savory
+            </button>
+            <button class="btn btn-primary allButton">Show all</button>
+          </div>
         </div>
       </div>
     </div>
     <div
       class="row justify-content-center card-deck row-cols-1 row-cols-md-2 row-cols-lg-3"
     >
-      <!-- Card deck is supposed to make the cards equal size, with the links inside of it it doesn't work -->
+      <!-- Card deck is supposed to make the cards equal size,fix this by using same image size -->
       <a href="./recipe.html">
         <div class="card bg-dark text-white sweet m-2">
           <img
@@ -71,21 +74,24 @@
           </div>
         </div>
       </a>
-      <div class="card bg-dark text-white savory m-2">
-        <img
-          src="https://images.pexels.com/photos/574111/pexels-photo-574111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          class="card-img"
-          alt="..."
-        />
-        <div class="card-img-overlay">
-          <h5 class="card-title">Curry</h5>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p class="card-text">Last updated 3 mins ago</p>
+      <a>
+        <div class="card bg-dark text-white savory m-2">
+          <img
+            src="https://images.pexels.com/photos/574111/pexels-photo-574111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            class="card-img"
+            alt="..."
+          />
+          <div class="card-img-overlay">
+            <h5 class="card-title">Curry</h5>
+            <p class="card-text">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <p class="card-text">Last updated 3 mins ago</p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
     <script src="./script.js"></script>
   </body>
