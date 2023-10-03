@@ -41,7 +41,7 @@
                      // Get the button with class "allButton"
         const allButton = document.querySelector('button.allButton');
 
-        // Add a click event listener to the "allButton" button
+        // COMPLETELY BROCKEN !!!
         allButton.addEventListener('click', function() {
             // Show all divs
             const allDivs = document.querySelectorAll('div');
