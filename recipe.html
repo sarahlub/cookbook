@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pancake Recipe</title>
+    <title>Pancake</title>
 
     <link
       rel="stylesheet"
@@ -23,15 +23,22 @@
           ><i class="bi bi-arrow-left-circle-fill"></i
         ></a>
       </div>
+
+      <div class="bg-dark text-light-emphasis p-5 m-0 col-12">
+        <div class="box">
+          <p mb-0>I am hungry for:</p>
+          <div class="end" style="--end: 3">
+            <span style="--index: 0">Pancakes</span>
+            <span style="--index: 1">Pancakes</span>
+            <span style="--index: 2">Pancakes</span>
+          </div>
+        </div>
+      </div>
+
       <!-- end of heading bar -->
 
       <!-- short desc with img -->
-      <div class="row">
-        <div class="col mb-5 text-center">
-          <h1>Pancake Recipe</h1>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-start">
+      <div class="row align-items-center justify-content-center mt-2">
         <div class="col col-md-6">
           <img
             src="./images/croppedpancake.jpg"
@@ -51,7 +58,7 @@
 
         <!-- servings calculator -->
         <div class="col-10 col-md-6">
-          <h2>How Hungry are you?</h2>
+          <h2 class="text-center">How Hungry are you?</h2>
           <div class="d-flex justify-content-around m-2">
             <button class="btn btn-primary">Normal</button>
             <button class="btn btn-primary multiply-2">Very Hungry</button>
