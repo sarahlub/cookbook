@@ -1,4 +1,5 @@
-        // Get all elements with class "sweet"
+
+// Get all elements with class "sweet"
         const sweetDivs = document.querySelectorAll('.sweet');
         
         // Get the button with class "sweet"

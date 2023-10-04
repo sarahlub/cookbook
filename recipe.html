@@ -42,51 +42,55 @@
               class="img-fluid w-100 h-20 p-0 m-0 rounded"
           /></a>
 
-          <p class="mt-3 text-center">
+          <p class="col-12 mt-3 text-center">
             A pancake is a flat cake, often thin and round, prepared from a
             starch-based batter that may contain eggs, milk and butter and
             cooked on a hot surface such as a griddle or frying pan, often
             frying with oil or butter. It is a type of batter bread. Click on
             the image, to find the recipe.
           </p>
+        </div>
 
-    </div>
+        <!-- end of desc with img -->
 
-
-      <!-- end of desc with img -->
-
-      <!-- servings calculator -->
+        <!-- servings calculator -->
         <div class="col-12 col-md-6">
-          <h2 class="mt-4">Number of servings</h2>
-          <input type="number" id="servings" class="form-control" />
+          <h2 class="mt-4">How Hungry are you?</h2>
+          <!-- <input type="number" id="servings" class="form-control" />
           <p class="text-center">
             Total Ingredient Quantity for
-            <span id="calculated-servings">1</span> Serving(s):
-            <span id="ingredient-quantity">1 cup</span>
-          </p>
-        <div
-        class="row bg-primary d-flex align-items-center justify-content-center rounded-3 mb-2"
-      > 
-        <div class="col-3 d-flex flex-column align-items-center align-items-center justify-content-center rounded-3 mb-2">
-          <img
-            src="https://img.icons8.com/color/96/hourglass.png"
-            alt="hourglass"
-            class="food-icon mt-3"
-          />
-          <p class="mt-2">45 min</p>
-        </div>
-        <div class="col-3 d-flex flex-column align-items-center">
-          <img
-            src="https://img.icons8.com/color/96/chef-hat.png"
-            alt="chef-hat"
-            class="food-icon mt-3"
-          />
-          <!-- where does the margin underneath the p come from - to center it I have assigned a maring to the top of the image-->
-          <p class="mt-2">Beginner</p>
+         <span id="calculated-servings">1</span> Serving(s):
+            <span id="ingredient-quantity">1 cup</span> 
+          </p> -->
+          <div class="d-flex justify-content-around m-2">
+            <button class="btn btn-primary">Normal</button>
+            <button class="btn btn-primary multiply-2">Very Hungry</button>
+          </div>
+          <div
+            class="row bg-primary d-flex align-items-center justify-content-center rounded-3 mb-2"
+          >
+            <div
+              class="col-3 d-flex flex-column align-items-center align-items-center justify-content-center rounded-3 mb-2"
+            >
+              <img
+                src="https://img.icons8.com/color/96/hourglass.png"
+                alt="hourglass"
+                class="food-icon mt-3"
+              />
+              <p class="mt-2">45 min</p>
+            </div>
+            <div class="col-3 d-flex flex-column align-items-center">
+              <img
+                src="https://img.icons8.com/color/96/chef-hat.png"
+                alt="chef-hat"
+                class="food-icon mt-3"
+              />
+              <!-- where does the margin underneath the p come from - to center it I have assigned a maring to the top of the image-->
+              <p class="mt-2">Beginner</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
       <!-- difficulty bar end -->
 
       <!-- accordion-item -->
@@ -129,7 +133,7 @@
                       />
                       All-purpose flour
                     </td>
-                    <td>1 cup</td>
+                    <td><span class="num">1</span> cup</td>
                   </tr>
                   <tr>
                     <td>
@@ -139,7 +143,7 @@
                         class="food-icon"
                       />Sugar
                     </td>
-                    <td>2 tablespoons</td>
+                    <td><span class="num">2</span> tablespoons</td>
                   </tr>
                   <tr>
                     <td>
@@ -149,7 +153,7 @@
                         class="food-icon"
                       />Baking powder
                     </td>
-                    <td>2 tablespoons</td>
+                    <td><span class="num">2</span> tablespoons</td>
                   </tr>
                   <tr>
                     <td>
@@ -160,7 +164,7 @@
                       />
                       Salt
                     </td>
-                    <td>1/2 teaspoon</td>
+                    <td><span class="num">1</span> teaspoon</td>
                   </tr>
                   <tr>
                     <td>
@@ -171,7 +175,7 @@
                       />
                       Milk
                     </td>
-                    <td>1 cup</td>
+                    <td><span class="num">1</span> cup</td>
                   </tr>
                   <tr>
                     <td>
@@ -182,20 +186,18 @@
                       />
                       Egg
                     </td>
-                    <td>1 big</td>
+                    <td><span class="num">1</span> big</td>
                   </tr>
                   <tr>
                     <td>
                       <img
-                        width="64"
-                        height="64"
                         src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-vegetable-oil-oil-gas-flaticons-flat-flat-icons.png"
                         alt="external-vegetable-oil-oil-gas-flaticons-flat-flat-icons"
                         class="food-icon"
                       />
                       Vegetable oil
                     </td>
-                    <td>2 tablespoons</td>
+                    <td><span class="num">2</span> tablespoons</td>
                   </tr>
                 </tbody>
               </table>
@@ -333,8 +335,8 @@
         </div>
       </div>
       <!-- end of accordion-item -->
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./recipe.js"></script>
   </body>
 </html>
