@@ -1,6 +1,6 @@
 
 // Get all elements with class "sweet"
-        const sweetDivs = document.querySelectorAll('.sweet');
+        const sweetDivs = document.getElementsByClassName('sweet');
         
         // Get the button with class "sweet"
         const sweetButton = document.querySelector('button.sweetButton');
@@ -8,7 +8,7 @@
         // Add a click event listener to the "sweet" button
         sweetButton.addEventListener('click', function() {
             // Hide all divs with class "savory"
-            const savoryDivs = document.querySelectorAll('.savory');
+            const savoryDivs = document.getElementsByClassName('savory');
             savoryDivs.forEach(function(div) {
                 div.style.display = 'none';
             });
@@ -20,7 +20,7 @@
         });
 
              // Get all elements with class "savory"
-             const savoryDivs = document.querySelectorAll('.savory');
+             const savoryDivs = document.getElementsByClassName('savory');
         
              // Get the button with class "sweet"
              const savoryButton = document.querySelector('button.savoryButton');
@@ -28,7 +28,7 @@
              // Add a click event listener to the "sweet" button
              savoryButton.addEventListener('click', function() {
                  // Hide all divs with class "savory"
-                 const sweetDivs = document.querySelectorAll('.sweet');
+                 const sweetDivs = document.getElementsByClassName('sweet');
                  sweetDivs.forEach(function(div) {
                      div.style.display = 'none';
                  });
@@ -45,7 +45,7 @@
 
         allButton.addEventListener('click', function() {
             // Show all cards
-            const allCards = document.querySelectorAll('.card');
+            const allCards = document.getElementsByClassName('.card');
             allCards.forEach(function(div) {
                 div.style.display = 'inline-block';
             });
