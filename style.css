@@ -7,14 +7,6 @@ input[type=checkbox]:checked + label.strikethrough{
     text-decoration: line-through;
   }
 
-.card-text {
-    display: none;
-}
-
-/* how do we get this to work?  */
-.card-text:hover {
-    display: inline;
-}
 .form-check-input {
     display: inline-block;
 }
@@ -24,18 +16,6 @@ input[type=checkbox]:checked + label.strikethrough{
     --color: #FAFAFA;
   }
   
-  
-  /* .box {
-    color: var(--color);
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .right {
-    text-align: right;
-    width: 100%;
-  }*/
   
   .end {
     display: grid;
@@ -94,19 +74,18 @@ i {
   font-size: 2rem;
 }
 
-.card-img-overlay {
+/* .card-img-overlay {
   position: relative;
   overflow: hidden;
-}
+}*/
 .card-img-overlay:hover .card-text {
-  display: block;
+  display: inline-block;
 }
+.card-img-overlay:hover {
+  background-color: rgba(3, 2, 2, 0.882);
+}
+
 .card-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: none;
-  background-color: skyblue;
   padding: 10px;
-}
+} 
