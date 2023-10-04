@@ -88,3 +88,8 @@ input[type=checkbox]:checked + label.strikethrough{
     }
     4%, 100% {  text-shadow: none; transform: none; }
   }
+
+
+i {
+  font-size: 2rem;
+}
