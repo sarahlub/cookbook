@@ -25,7 +25,7 @@ input[type=checkbox]:checked + label.strikethrough{
   }
   
   
-  .box {
+  /* .box {
     color: var(--color);
     font-size: 1.5rem;
     display: flex;
@@ -35,12 +35,12 @@ input[type=checkbox]:checked + label.strikethrough{
   .right {
     text-align: right;
     width: 100%;
-  }
+  }*/
   
   .end {
     display: grid;
     grid-template-columns: 1fr;
-  }
+  } 
   
   .end span {
     font-weight: bold;
