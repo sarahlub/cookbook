@@ -1,338 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pancake</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer Curry</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+</head>
+<body>
     <!-- Heading bar -->
     <div class="container mt-5 justify-content-center">
-      <div class="sticky-top">
-        <a href="../index.html"><i class="bi bi-arrow-left-circle-fill"></i></a>
-      </div>
-
-      <div class="bg-dark text-light-emphasis p-5 m-0 col-12">
-        <div class="box">
-          <p mb-0>I am hungry for:</p>
-          <div class="end" style="--end: 3">
-            <span style="--index: 0">Pancakes</span>
-            <span style="--index: 1">Pancakes</span>
-            <span style="--index: 2">Pancakes</span>
-          </div>
+        <div class="sticky-top">
+            <a href="../index.html"><i class="bi bi-arrow-left-circle-fill"></i></a>
         </div>
-      </div>
 
-      <!-- end of heading bar -->
-
-      <!-- short desc with img -->
-      <div class="row align-items-center justify-content-center align-items-md-start mt-2">
-        <div class="col col-md-6 col-12">
-          <img
-            src="../images/pancake-1.jpg"
-            alt="Pancake Recipe"
-            class="img-fluid w-100 h-20 p-0 m-0 mb-md-2 rounded"
-          />
-        </div>
-        <div class="col-10 col-md-6">
-          <p class="mt-3  mt-md-0 text-center text-md-start fs-5">
-            A pancake is a flat cake, often thin and round, prepared from a
-            starch-based batter that may contain eggs, milk and butter and
-            cooked on a hot surface such as a griddle or frying pan, often
-            frying with oil or butter.
-          </p>
-        
-
-        <!-- end of desc with img -->
-
-        <!-- servings calculator -->
-        
-          <h2 class="text-center text-md-start">How Hungry are you?</h2>
-          <div class="d-flex justify-content-around m-2">
-            <button id="normalButton" class="btn btn-primary">Normal</button>
-            <button class="btn btn-primary multiply-2">Very Hungry</button>
-          </div>
-          <div
-            class="bg-primary d-flex align-items-center justify-content-evenly rounded-3 mb-2"
-          >
-            <div
-              class="d-flex flex-column align-items-center justify-content-center rounded-3"
-            >
-              <img
-                src="https://img.icons8.com/color/96/hourglass.png"
-                alt="hourglass"
-                class="food-icon mt-3"
-              />
-              <p class="mt-2"><span class="num">45</span> min</p>
+        <div class="bg-dark text-light-emphasis p-5 m-0 col-12">
+            <div class="box">
+                <p mb-0>I am hungry for:</p>
+                <div class="end" style="--end: 3">
+                    <span style="--index: 0">Paneer Curry</span>
+                    <span style="--index: 1">Paneer Curry</span>
+                    <span style="--index: 2">Paneer Curry</span>
+                </div>
             </div>
-            <div class="d-flex flex-column align-items-center justify-content-center rounded-3">
-              <img
-                src="https://img.icons8.com/color/96/chef-hat.png"
-                alt="chef-hat"
-                class="food-icon mt-3"
-              />
-              <!-- where does the margin underneath the p come from - to center it I have assigned a maring to the top of the image-->
-              <p class="mt-2">Beginner</p>
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- difficulty bar end -->
 
-      <!-- accordion-item -->
+        <!-- end of heading bar -->
 
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              Ingredients
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show in"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <table class="table table-striped mb-4">
-                <thead>
-                  <tr>
-                    <th>Ingredient</th>
-                    <th>Quantity</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <img
-                        src="https://img.icons8.com/color/96/flour-in-paper-packaging.png"
-                        alt="flour-in-paper-packaging"
-                        class="food-icon"
-                      />
-                      All-purpose flour
-                    </td>
-                    <td><span class="num">1</span> cup</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="https://img.icons8.com/color/96/sugar.png"
-                        alt="sugar"
-                        class="food-icon"
-                      />Sugar
-                    </td>
-                    <td><span class="num">2</span> tablespoons</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="https://img.icons8.com/color/96/spoon-of-sugar.png"
-                        alt="spoon-of-sugar"
-                        class="food-icon"
-                      />Baking powder
-                    </td>
-                    <td><span class="num">2</span> tablespoons</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="https://img.icons8.com/emoji/48/salt-emoji.png"
-                        alt="salt-emoji"
-                        class="food-icon"
-                      />
-                      Salt
-                    </td>
-                    <td><span class="num">1</span> teaspoon</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="https://img.icons8.com/color/48/milk-carton.png"
-                        alt="milk-carton"
-                        class="food-icon"
-                      />
-                      Milk
-                    </td>
-                    <td><span class="num">1</span> cup</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="https://img.icons8.com/color/96/egg-carton.png"
-                        alt="egg-carton"
-                        class="food-icon"
-                      />
-                      Egg
-                    </td>
-                    <td><span class="num">1</span> big</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img
-                        src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-vegetable-oil-oil-gas-flaticons-flat-flat-icons.png"
-                        alt="external-vegetable-oil-oil-gas-flaticons-flat-flat-icons"
-                        class="food-icon"
-                      />
-                      Vegetable oil
-                    </td>
-                    <td><span class="num">2</span> tablespoons</td>
-                  </tr>
-                </tbody>
-              </table>
+        <!-- short desc with img -->
+        <div class="row align-items-center justify-content-center align-items-md-start mt-2">
+            <div class="col col-md-6 col-12">
+                <img
+                    src="../images/paneer-1.jpg"
+                    alt="Paneer Curry Recipe"
+                    class="img-fluid w-100 h-20 p-0 m-0 mb-md-2 rounded"
+                />
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Instructions
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <ul class="list-unstyled">
-                <li class="list-group-items">
-                  <input
-                    class="form-check-input border-success"
-                    type="checkbox"
-                    value=""
-                    id="step1"
-                  />
-                  <label
-                    class="form-check-label strikethrough d-inline"
-                    for="step1"
+            <div class="col-10 col-md-6">
+                <p class="mt-3  mt-md-0 text-center text-md-start fs-5">
+                    Paneer Curry is a delicious Indian dish made with cubes of paneer (Indian cheese) cooked in a flavorful tomato-based curry sauce with spices like cumin, coriander, and garam masala. It's a popular vegetarian curry that goes well with rice or naan.
+                </p>
+              
+      
+              <!-- end of desc with img -->
+      
+              <!-- servings calculator -->
+              
+                <h2 class="text-center text-md-start">How Hungry are you?</h2>
+                <div class="d-flex justify-content-around m-2">
+                  <button id="normalButton" class="btn btn-primary">Normal</button>
+                  <button class="btn btn-primary multiply-2">Very Hungry</button>
+                </div>
+                <div
+                  class="bg-primary d-flex align-items-center justify-content-evenly rounded-3 mb-2"
+                >
+                  <div
+                    class="d-flex flex-column align-items-center justify-content-center rounded-3"
                   >
-                    In a large bowl, whisk together the flour, sugar, baking
-                    powder and salt.
-                  </label>
-                </li>
-                <li class="list-group-items">
-                  <input
-                    class="form-check-input border-success"
-                    type="checkbox"
-                    value=""
-                    id="step2"
-                  />
-                  <label
-                    class="form-check-label strikethrough d-inline"
-                    for="step2"
-                  >
-                    In a separate bowl, whisk together the milk, egg, and
-                    vegetable oil.
-                  </label>
-                </li>
-                <li class="list-group-items">
-                  <input
-                    class="form-check-input border-success"
-                    type="checkbox"
-                    value=""
-                    id="step3"
-                  />
-                  <label
-                    class="form-check-label strikethrough d-inline"
-                    for="step3"
-                  >
-                    Pour the wet ingredients into the dry ingredients and stir
-                    until just combined (do not over-mix).
-                  </label>
-                </li>
-                <li class="list-group-items">
-                  <input
-                    class="form-check-input border-success"
-                    type="checkbox"
-                    value=""
-                    id="step4"
-                  />
-                  <label
-                    class="form-check-label strikethrough d-inline"
-                    for="step4"
-                  >
-                    Heat a non-stick pan over medium heat and scoop 1/4 cup of
-                    batter onto the pan for each pancake.
-                  </label>
-                </li>
-                <li class="list-group-items">
-                  <input
-                    class="form-check-input border-success"
-                    type="checkbox"
-                    value=""
-                    id="step5"
-                  />
-                  <label
-                    class="form-check-label strikethrough d-inline"
-                    for="step5"
-                  >
-                    Cook until bubbles appear on the surface of the pancake and
-                    the bottom is golden-brown, then flip and cook the other
-                    side until golden-brown.
-                  </label>
-                </li>
-                <li class="list-group-items">
-                  <input
-                    class="form-check-input border-success"
-                    type="checkbox"
-                    value=""
-                    id="step6"
-                  />
-                  <label
-                    class="form-check-label strikethrough d-inline"
-                    for="step6"
-                  >
-                    Repeat with the remaining batter.
-                  </label>
-                </li>
-                <li class="list-group-items">
-                  <input
-                    class="form-check-input border-success"
-                    type="checkbox"
-                    value=""
-                    id="step7"
-                  />
-                  <label
-                    class="form-check-label strikethrough d-inline"
-                    for="step7"
-                  >
-                    Enjoy your pancakes!
-                  </label>
-                </li>
-              </ul>
+                    <img
+                      src="https://img.icons8.com/color/96/hourglass.png"
+                      alt="hourglass"
+                      class="food-icon mt-3"
+                    />
+                    <p class="mt-2"><span class="num">45</span> min</p>
+                  </div>
+                  <div class="d-flex flex-column align-items-center justify-content-center rounded-3">
+                    <img
+                      src="https://img.icons8.com/color/96/chef-hat.png"
+                      alt="chef-hat"
+                      class="food-icon mt-3"
+                    />
+                    <!-- where does the margin underneath the p come from - to center it I have assigned a maring to the top of the image-->
+                    <p class="mt-2">Intermediate</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+
+        <!-- end of servings calculator -->
+
+        <!-- accordion-item -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                    >
+                        Ingredients
+                    </button>
+                </h2>
+                <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show in"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                >
+                    <div class="accordion-body">
+                        <table class="table table-striped mb-4">
+                            <thead>
+                                <tr>
+                                    <th>Ingredient</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="./icons/paneer.jpg"
+                                            alt="paneer"
+                                            class="food-icon"
+                                        />
+                                        Paneer (Indian Cheese)
+                                    </td>
+                                    <td><span class="num">250g</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/tomato.png"
+                                            alt="tomato"
+                                            class="food-icon"
+                                        />
+                                        Tomatoes
+                                    </td>
+                                    <td><span class="num">3</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/onion.png"
+                                            alt="onion"
+                                            class="food-icon"
+                                        />
+                                        Onion
+                                    </td>
+                                    <td><span class="num">1</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/garlic.png"
+                                            alt="garlic"
+                                            class="food-icon"
+                                        />
+                                        Garlic Cloves
+                                    </td>
+                                    <td><span class="num">4</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/ginger.png"
+                                            alt="ginger"
+                                            class="food-icon"
+                                        />
+                                        Ginger
+                                    </td>
+                                    <td><span class="num">1-inch</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/spice.png"
+                                            alt="spice"
+                                            class="food-icon"
+                                        />
+                                        Garam Masala
+                                    </td>
+                                    <td><span class="num">1 tsp</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/coriander.png"
+                                            alt="coriander"
+                                            class="food-icon"
+                                        />
+                                        Coriander Powder
+                                    </td>
+                                    <td><span class="num">1 tsp</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/cumin.png"
+                                            alt="cumin"
+                                            class="food-icon"
+                                        />
+                                        Cumin Seeds
+                                    </td>
+                                    <td><span class="num">1/2 tsp</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/cream.png"
+                                            alt="cream"
+                                            class="food-icon"
+                                        />
+                                        Fresh Cream
+                                    </td>
+                                    <td><span class="num">1/4 cup</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/butter.png"
+                                            alt="butter"
+                                            class="food-icon"
+                                        />
+                                        Butter
+                                    </td>
+                                    <td><span class="num">2 tbsp</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/oil.png"
+                                            alt="oil"
+                                            class="food-icon"
+                                        />
+                                        Cooking Oil
+                                    </td>
+                                    <td><span class="num">2 tbsp</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img
+                                            src="https://img.icons8.com/color/96/salt.png"
+                                            alt="salt"
+                                            class="food-icon"
+                                        />
+                                        Salt
+                                    </td>
+                                    <td><span class="num">To taste</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                    >
+                        Instructions
+                    </button>
+                </h2>
+                <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                >
+                    <div class="accordion-body">
+                        <ul class="list-unstyled">
+                            <li class="list-group-items">
+                                <input
+                                    class="form-check-input border-success"
+                                    type="checkbox"
+                                    value=""
+                                    id="step1"
+                                />
+                                <label
+                                    class="form-check-label strikethrough d-inline"
+                                    for="step1"
+                                >
+                                    Cut the paneer into small cubes and set aside.
+                                </label>
+                            </li>
+                            <li class="list-group-items">
+                                <input
+                                    class="form-check-input border-success"
+                                    type="checkbox"
+                                    value=""
+                                    id="step2"
+                                />
+                                <label
+                                    class="form-check-label strikethrough d-inline"
+                                    for="step2"
+                                >
+                                    Heat oil and butter in a pan. Add cumin seeds and let them splutter.
+                                </label>
+                            </li>
+                            <li class="list-group-items">
+                                <input
+                                    class="form-check-input border-success"
+                                    type="checkbox"
+                                    value=""
+                                    id="step3"
+                                />
+                                <label
+                                    class="form-check-label strikethrough d-inline"
+                                    for="step3"
+                                >
+                                    Add chopped onions and sauté until they turn translucent.
+                                </label>
+                            </li>
+                            <li class="list-group-items">
+                                <input
+                                    class="form-check-input border-success"
+                                    type="checkbox"
+                                    value=""
+                                    id="step4"
+                                />
+                                <label
+                                    class="form-check-label strikethrough d-inline"
+                                    for="step4"
+                                >
+                                    Add minced garlic and ginger. Sauté until the raw smell disappears.
+                                </label>
+                            </li>
+                            <li class="list-group-items">
+                                <input
+                                    class="form-check-input border-success"
+                                    type="checkbox"
+                                    value=""
+                                    id="step5"
+                                />
+                                <label
+                                    class="form-check-label strikethrough d-inline"
+                                    for="step5"
+                                >
+                                    Add chopped tomatoes and cook until they become soft and mushy.
+                                </label>
+                            </li>
+                            <li class="list-group-items">
+                                <input
+                                    class="form-check-input border-success"
+                                    type="checkbox"
+                                    value=""
+                                    id="step6"
+                                />
+                                <label
+                                    class="form-check-label strikethrough d-inline"
+                                    for="step6"
+                                >
+                                    Add garam masala, coriander powder, and salt. Mix well and cook for a few minutes.
+                                </label>
+                            </li>
+                            <li class="list-group-items">
+                                <input
+                                    class="form-check-input border-success"
+                                    type="checkbox"
+                                    value=""
+                                    id="step7"
+                                />
+                                <label
+                                    class="form-check-label strikethrough d-inline"
+                                    for="step7"
+                                >
+                                    Add the paneer cubes and cook for 2-3 minutes, stirring gently to coat the paneer with the sauce.
+                                </label>
+                            </li>
+                            <li class="list-group-items">
+                                <input
+                                    class="form-check-input border-success"
+                                    type="checkbox"
+                                    value=""
+                                    id="step8"
+                                />
+                                <label
+                                    class="form-check-label strikethrough d-inline"
+                                    for="step8"
+                                >
+                                    Reduce heat, add fresh cream, and simmer for a couple of minutes.
+                                </label>
+                            </li>
+                            <li class="list-group-items">
+                                <input
+                                    class="form-check-input border-success"
+                                    type="checkbox"
+                                    value=""
+                                    id="step9"
+                                />
+                                <label
+                                    class="form-check-label strikethrough d-inline"
+                                    for="step9"
+                                >
+                                    Garnish with chopped coriander leaves and serve hot with rice or naan.
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- end of accordion-item -->
+        <!-- end of accordion-item -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../scripts/recipe.js"></script>
-  </body>
+</body>
 </html>
