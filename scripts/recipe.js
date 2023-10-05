@@ -14,3 +14,9 @@
                }
            });
        });
+
+       document.getElementById('normalButton').addEventListener('click', function() {
+        location.reload();
+    });
+
+   
